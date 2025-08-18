@@ -1,0 +1,161 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>Chat Analytics</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+img {
+    max-width: 80%;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    transition: transform 0.2s ease-in-out;
+}
+img:hover {
+    transform: scale(1.02);
+}
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+#lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+</style>
+</head><body>
+<h1>Chat Analytics</h1>
+<div class='chat'><h2>sns_msk.json</h2>
+<div class='grid'>
+<figure><img src='sns_msk.json/active_users_per_month.png' alt='active_users_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/first_time_posters_over_time.png' alt='first_time_posters_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/join_leave_events_per_month.png' alt='join_leave_events_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/mentions_per_user.png' alt='mentions_per_user.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/top_users_by_messages_from_id.png' alt='top_users_by_messages_from_id.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_msk.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+<div class='chat'><h2>sns_salary.json</h2>
+<div class='grid'>
+<figure><img src='sns_salary.json/active_users_per_month.png' alt='active_users_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/first_time_posters_over_time.png' alt='first_time_posters_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/mentions_per_user.png' alt='mentions_per_user.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/top_users_by_messages_from_id.png' alt='top_users_by_messages_from_id.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_salary.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+<div class='chat'><h2>sns_spb.json</h2>
+<div class='grid'>
+<figure><img src='sns_spb.json/active_users_per_month.png' alt='active_users_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/first_time_posters_over_time.png' alt='first_time_posters_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/join_leave_events_per_month.png' alt='join_leave_events_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/mentions_per_user.png' alt='mentions_per_user.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/top_users_by_messages_from_id.png' alt='top_users_by_messages_from_id.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_spb.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+<div class='chat'><h2>sns_jobs.json</h2>
+<div class='grid'>
+<figure><img src='sns_jobs.json/active_users_per_month.png' alt='active_users_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/first_time_posters_over_time.png' alt='first_time_posters_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/mentions_per_user.png' alt='mentions_per_user.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/top_users_by_messages_from_id.png' alt='top_users_by_messages_from_id.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_jobs.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+<div class='chat'><h2>sns_anon.json</h2>
+<div class='grid'>
+<figure><img src='sns_anon.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_anon.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+<div class='chat'><h2>sns_sex.json</h2>
+<div class='grid'>
+<figure><img src='sns_sex.json/average_message_length_per_month.png' alt='average_message_length_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/hashtags_per_month.png' alt='hashtags_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/messages_by_weekday.png' alt='messages_by_weekday.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/messages_per_hour.png' alt='messages_per_hour.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/messages_per_month.png' alt='messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/pinned_messages_per_month.png' alt='pinned_messages_per_month.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/ratio_service_vs_message_over_time.png' alt='ratio_service_vs_message_over_time.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/topics_nmf.png' alt='topics_nmf.png' loading='lazy'/></figure>
+<figure><img src='sns_sex.json/wordcloud_top_words.png' alt='wordcloud_top_words.png' loading='lazy'/></figure>
+</div>
+</div>
+
+    <div id="lightbox">
+      <img src="" alt="Preview"/>
+    </div>
+    
+<script>
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+    });
+});
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+});
+</script>
+</body></html>
