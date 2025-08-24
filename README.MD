@@ -72,7 +72,7 @@ Open `index.html` in your browser to view the interactive dashboard.
 ## 🔗 Live Demo
 
 You can explore an **interactive version of the analysis** online:  
-👉 [https://artur-in.me/sns-analysis](https://artur-in.me/sns-analysis)
+👉 [https://artur-in.me/chat-analysis/sns](https://artur-in.me/chat-analysis/sns)
 
 ---
 
