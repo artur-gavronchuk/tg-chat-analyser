@@ -40,6 +40,19 @@ git clone https://github.com/username/telegram-chat-analyzer.git
 cd telegram-chat-analyzer
 ```
 
+### 🐳 Docker Support (Alternative)
+
+If you prefer to run the application in a container, you can use Docker Compose:
+
+1. Ensure you have Docker and Docker Compose installed on your system
+2. Place your Telegram JSON export files in the `data/` directory
+3. Run the application with Docker Compose:
+   ```bash
+   docker-compose up
+   ```
+
+The results will be available in the `results/` directory, just like with the regular installation.
+
 ---
 
 ## 📥 Exporting Data from Telegram
@@ -66,6 +79,46 @@ Output will be saved in the `result/` folder.
 Open `index.html` in your browser to view the interactive dashboard.
 
 ![Execution Result](docs/main_readme/data_result.png)
+
+### 🐳 Docker Usage
+
+To run with Docker Compose:
+
+```bash
+# Place your Telegram JSON export files in the `data/` directory
+# Then run:
+docker-compose up
+
+# Or run in detached mode:
+docker-compose up -d
+```
+
+To stop the containers:
+```bash
+docker-compose down
+```
+
+To rebuild the containers (after making changes to the code):
+```bash
+docker-compose up --build
+```
+
+You can customize the Docker Compose setup by creating a `docker-compose.override.yml` file based on the provided example.
+
+To run the analyzer with custom configuration in Docker:
+```bash
+# Create your custom config file
+# Then run with custom config:
+docker-compose run --rm tg-chat-analyzer python main.py your-custom-config.yaml
+```
+
+#### Web Server for Results (Optional)
+
+The project includes a Caddyfile for serving the results via a web server. To use it:
+
+1. Uncomment the `web` service section in `docker-compose.yml` or add it to your `docker-compose.override.yml`
+2. Run `docker-compose up`
+3. Access the results at http://localhost:8000
 
 ---
 
@@ -110,16 +163,20 @@ The project already includes the following chart types:
 ```
 telegram-chat-analyzer/
 │
-├── processors/         # Data processing scripts
-├── templates/          # HTML templates for visualisation
-├── docs/               # Screenshots and documentation
-├── output/             # .json Telegram chat data exported files
-├── data/               # Generated charts and dashboards
-├── main.py             # Entry point
-├── requirements.txt    # Python dependencies
-├── config.yaml         # Configurations and settings
-├── LICENSE             # License file
-└── README.md           # This file
+├── processors/                    # Data processing scripts
+├── templates/                    # HTML templates for visualisation
+├── docs/                         # Screenshots and documentation
+├── output/                       # .json Telegram chat data exported files
+├── data/                         # Generated charts and dashboards
+├── main.py                       # Entry point
+├── requirements.txt              # Python dependencies
+├── config.yaml                   # Configurations and settings
+├── Dockerfile                    # Docker configuration
+├── docker-compose.yml            # Docker Compose configuration
+├── docker-compose.override.yml.example  # Docker Compose override example
+├── Caddyfile                     # Web server configuration (optional)
+├── LICENSE                       # License file
+└── README.md                     # This file
 ```
 
 ---

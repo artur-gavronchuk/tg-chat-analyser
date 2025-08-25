@@ -1,0 +1,23 @@
+# .dockerignore
+.git
+.gitignore
+README.MD
+README.md
+.DS_Store
+*.log
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache
+.coverage
+.pytest_cache/
+results/
+
+# Ignore data directory contents (will be mounted as volume)
+data/*
+
+# Don't ignore the data directory itself
+!important data/
