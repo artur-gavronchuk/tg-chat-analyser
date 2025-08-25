@@ -1,0 +1,38 @@
+# Example override file for docker-compose
+# Copy this file to docker-compose.override.yml and modify as needed
+
+version: '3.8'
+
+services:
+  tg-chat-analyzer:
+    # Example: Use a different config file
+    # command: python main.py custom-config.yaml
+    
+    # Example: Add environment variables
+    # environment:
+    #   - CUSTOM_VAR=value
+    
+    # Example: Use a specific user
+    # user: "${UID:-1000}:${GID:-1000}"
+    
+    # Example: Add additional volume mappings
+    # volumes:
+    #   - ./custom-config.yaml:/app/custom-config.yaml
+    
+    # Example: Set resource limits
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.5'
+    #       memory: 512M
+
+  # Uncomment to enable the web server for serving results
+  # web:
+  #   image: caddy:2-alpine
+  #   depends_on:
+  #     - tg-chat-analyzer
+  #   volumes:
+  #     - ./results:/usr/share/caddy
+  #     - ./Caddyfile:/etc/caddy/Caddyfile
+  #   ports:
+  #     - "8000:80"

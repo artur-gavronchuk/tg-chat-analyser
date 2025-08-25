@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  tg-chat-analyzer:
+    build: .
+    container_name: tg-chat-analyzer
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    command: python main.py config.yaml
+
+  # Web server to serve the results (optional)
+  # Uncomment the following lines if you want to serve the results via a web server
+  # web:
+  #   image: caddy:2-alpine
+  #   depends_on:
+  #     - tg-chat-analyzer
+  #   volumes:
+  #     - ./results:/usr/share/caddy
+  #     - ./Caddyfile:/etc/caddy/Caddyfile
+  #   ports:
+  #     - "8000:80"

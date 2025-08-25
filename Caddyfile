@@ -1,0 +1,6 @@
+# Caddyfile for serving the results
+:80 {
+    root * /usr/share/caddy
+    file_server
+    try_files {path} {path}/ /index.html
+}
